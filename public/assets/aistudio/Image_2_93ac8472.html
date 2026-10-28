@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>POLLEXPERTS 3D | Tacos de Luxo, Skins CS2 &amp; Áudio Kits Gamer</title>
+<!-- Google Fonts: Space Grotesk & JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Space Grotesk', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            obsidian: {
+              950: '#070908',
+              900: '#0b0d0a',
+              850: '#10130f',
+              800: '#141712',
+              700: '#1d221b',
+              600: '#2b3227',
+            },
+            amberGold: {
+              300: '#fde047',
+              400: '#facc15',
+              500: '#eab308',
+              600: '#ca8a04',
+            },
+            neonCyan: {
+              400: '#22d3ee',
+              500: '#06b6d4',
+            }
+          },
+          boxShadow: {
+            'glow-gold': '0 0 25px -3px rgba(234, 179, 8, 0.28)',
+            'glow-cyan': '0 0 25px -3px rgba(6, 182, 212, 0.3)',
+            'glow-purple': '0 0 30px -4px rgba(217, 70, 239, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for Luxury Effects -->
+<style data-purpose="custom-decorations">
+    .bg-grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    .amber-gradient-text {
+      background: linear-gradient(135deg, #fff7ed 0%, #facc15 50%, #ca8a04 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .holo-gradient-border {
+      background: linear-gradient(145deg, rgba(234, 179, 8, 0.35), rgba(6, 182, 212, 0.2), rgba(15, 23, 42, 0.1));
+    }
+    /* Animated Soundwave bars */
+    @keyframes soundwave {
+      0%, 100% { height: 6px; }
+      50% { height: 38px; }
+    }
+    .wave-bar {
+      animation: soundwave 1.2s ease-in-out infinite;
+    }
+    .wave-bar:nth-child(2) { animation-delay: 0.15s; }
+    .wave-bar:nth-child(3) { animation-delay: 0.35s; }
+    .wave-bar:nth-child(4) { animation-delay: 0.2s; }
+    .wave-bar:nth-child(5) { animation-delay: 0.45s; }
+    .wave-bar:nth-child(6) { animation-delay: 0.1s; }
+    .wave-bar:nth-child(7) { animation-delay: 0.5s; }
+    .wave-bar:nth-child(8) { animation-delay: 0.3s; }
+  </style>
+</head>
+<body class="bg-obsidian-950 text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-amberGold-500 selection:text-black">
+<!-- BEGIN: SiteHeader -->
+<header class="sticky top-0 z-50 backdrop-blur-xl bg-obsidian-950/85 border-b border-white/5 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amberGold-600 via-amberGold-400 to-amber-200 flex items-center justify-center font-mono font-black text-black shadow-glow-gold transition-transform group-hover:scale-105">
+          3D
+        </div>
+<div class="flex flex-col">
+<span class="text-xl font-extrabold tracking-wider text-white font-mono flex items-center gap-1">
+            POLLEXPERTS<span class="text-amberGold-400 text-sm font-black px-1 py-0.5 rounded bg-amberGold-500/10 border border-amberGold-500/30">3D</span>
+</span>
+<span class="text-[10px] tracking-widest text-slate-400 uppercase font-mono">Custom Cues • CS2 Skins • Audio</span>
+</div>
+</a>
+<!-- Desktop Navigation Menu -->
+<nav aria-label="Navegação Principal" class="hidden xl:flex items-center gap-8 font-medium text-sm text-slate-300">
+<a class="hover:text-amberGold-400 transition-colors flex items-center gap-1.5" href="#tacos">
+<i class="fa-solid fa-wand-magic-sparkles text-xs text-amberGold-500"></i> Tacos Customizados
+        </a>
+<a class="hover:text-amberGold-400 transition-colors flex items-center gap-1.5" href="#skins">
+<i class="fa-solid fa-crosshairs text-xs text-cyan-400"></i> Skins CS2
+        </a>
+<a class="hover:text-amberGold-400 transition-colors flex items-center gap-1.5" href="#musicas">
+<i class="fa-solid fa-waveform-lines text-xs text-fuchsia-400"></i> Músicas de Perfil
+        </a>
+<a class="hover:text-amberGold-400 transition-colors" href="#loja3d">
+          Loja 3D
+        </a>
+<a class="text-amberGold-400 hover:text-amberGold-300 font-semibold flex items-center gap-1" href="#customizador">
+<span class="relative flex h-2 w-2 mr-1">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amberGold-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-amberGold-500"></span>
+</span>
+          Criador Personalizado
+        </a>
+</nav>
+<!-- Action Buttons -->
+<div class="flex items-center gap-3">
+<!-- Steam Login Integration -->
+<button class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg bg-obsidian-850 hover:bg-obsidian-800 border border-white/10 text-slate-200 transition-all hover:border-amberGold-500/40" type="button">
+<i class="fa-brands fa-steam text-slate-300 text-sm"></i>
+<span>Entrar com Steam</span>
+</button>
+<!-- Cart Quick View -->
+<button aria-label="Carrinho de Compras" class="relative p-2.5 rounded-lg bg-obsidian-900 border border-white/10 text-slate-300 hover:text-amberGold-400 transition-colors" type="button">
+<i class="fa-solid fa-cart-shopping text-sm"></i>
+<span class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-amberGold-500 text-black text-[11px] font-mono font-bold flex items-center justify-center">2</span>
+</button>
+<!-- Mobile Menu Trigger -->
+<button aria-label="Abrir Menu" class="xl:hidden p-2.5 rounded-lg bg-obsidian-900 border border-white/10 text-slate-300 hover:text-white" type="button">
+<i class="fa-solid fa-bars text-lg"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- END: SiteHeader -->
+<!-- BEGIN: HeroBannerSection -->
+<section class="relative min-h-[88vh] flex items-center justify-center overflow-hidden py-16 lg:py-24 bg-grid-pattern border-b border-white/5" data-purpose="hero-banner">
+<!-- Ambient Light Halos -->
+<div class="absolute -top-40 -left-20 w-[550px] h-[550px] bg-amberGold-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute -bottom-20 -right-20 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[150px] pointer-events-none"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-fuchsia-600/5 rounded-full blur-[160px] pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center text-center z-10">
+<!-- Top Badge / Release Tag -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-obsidian-850 border border-amberGold-500/40 shadow-glow-gold mb-6 animate-pulse">
+<i class="fa-solid fa-cube text-amberGold-400 text-xs"></i>
+<span class="text-xs font-mono font-semibold tracking-wider text-amberGold-300 uppercase">NOVA COLEÇÃO 2026 // TECNOLOGIA 3D PBR</span>
+</div>
+<!-- Main Headline -->
+<h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-5xl text-white uppercase leading-[1.08]">
+        POLLEXPERTS 3D — <br class="hidden sm:inline"/>
+<span class="amber-gradient-text">ELEVE O SEU JOGO</span> &amp; SEU ESTILO
+      </h1>
+<!-- Subheadline -->
+<p class="mt-6 text-base sm:text-lg lg:text-xl text-slate-300 max-w-3xl font-normal leading-relaxed">
+        A primeira plataforma de elite fundindo <span class="text-white font-semibold">Tacos Profissionais de Sinuca Sob Medida</span>, o prestigiado <span class="text-white font-semibold">Mercado CS2 High-Tier</span> e <span class="text-white font-semibold">Identidade Sonora com Áudio Kits</span> personalizados para perfis.
+      </p>
+<!-- Three Pillars Holographic Badges -->
+<div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3.5 w-full max-w-4xl" data-purpose="three-pillars-badges">
+<!-- Pillar 1 Tag -->
+<a class="flex items-center justify-center sm:justify-start gap-3 p-3.5 rounded-xl bg-obsidian-900/90 border border-amberGold-500/30 hover:border-amberGold-400 transition-all hover:-translate-y-1 group backdrop-blur" href="#tacos">
+<div class="w-10 h-10 rounded-lg bg-amberGold-500/10 flex items-center justify-center text-amberGold-400 group-hover:bg-amberGold-500 group-hover:text-black transition-colors">
+<i class="fa-solid fa-pool-8-ball text-lg"></i>
+</div>
+<div class="text-left">
+<p class="text-[11px] font-mono uppercase text-amberGold-400 font-semibold">Pilar 01</p>
+<p class="text-xs sm:text-sm font-bold text-white leading-tight">Tacos Sob Medida 3D</p>
+</div>
+</a>
+<!-- Pillar 2 Tag -->
+<a class="flex items-center justify-center sm:justify-start gap-3 p-3.5 rounded-xl bg-obsidian-900/90 border border-cyan-500/30 hover:border-cyan-400 transition-all hover:-translate-y-1 group backdrop-blur" href="#skins">
+<div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-400 group-hover:text-black transition-colors">
+<i class="fa-solid fa-shield-halved text-lg"></i>
+</div>
+<div class="text-left">
+<p class="text-[11px] font-mono uppercase text-cyan-400 font-semibold">Pilar 02</p>
+<p class="text-xs sm:text-sm font-bold text-white leading-tight">Skins Lendárias CS2</p>
+</div>
+</a>
+<!-- Pillar 3 Tag -->
+<a class="flex items-center justify-center sm:justify-start gap-3 p-3.5 rounded-xl bg-obsidian-900/90 border border-fuchsia-500/30 hover:border-fuchsia-400 transition-all hover:-translate-y-1 group backdrop-blur" href="#musicas">
+<div class="w-10 h-10 rounded-lg bg-fuchsia-500/10 flex items-center justify-center text-fuchsia-400 group-hover:bg-fuchsia-500 group-hover:text-black transition-colors">
+<i class="fa-solid fa-compact-disc text-lg"></i>
+</div>
+<div class="text-left">
+<p class="text-[11px] font-mono uppercase text-fuchsia-400 font-semibold">Pilar 03</p>
+<p class="text-xs sm:text-sm font-bold text-white leading-tight">Músicas &amp; Hinos de Perfil</p>
+</div>
+</a>
+</div>
+<!-- Hero Call To Action Buttons -->
+<div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+<a class="px-8 py-3.5 rounded-xl bg-amberGold-500 hover:bg-amberGold-400 text-obsidian-950 font-bold text-sm tracking-wide shadow-glow-gold transition-all transform hover:scale-105 flex items-center gap-2" href="#tacos">
+<span>Explorar Showcase 3D</span>
+<i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+<a class="px-8 py-3.5 rounded-xl bg-obsidian-900 hover:bg-obsidian-850 text-white border border-white/15 font-semibold text-sm transition-all hover:border-amberGold-400/50 flex items-center gap-2" href="#customizador">
+<i class="fa-solid fa-sliders text-xs text-amberGold-400"></i>
+<span>Montar Meu Equipamento</span>
+</a>
+</div>
+</div>
+</section>
+<!-- END: HeroBannerSection -->
+<!-- BEGIN: CueSticksShowcase (Pillar 1) -->
+<section class="py-20 lg:py-28 relative bg-obsidian-900/60 border-b border-white/5" data-purpose="custom-cues-pillar" id="tacos">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Title & Meta Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<div class="inline-flex items-center gap-2 text-amberGold-400 font-mono text-xs font-semibold tracking-wider uppercase mb-2">
+<span class="w-2 h-2 rounded-full bg-amberGold-500"></span> PILAR 01 • BILLIARDS &amp; POOL CRAFT
+          </div>
+<h2 class="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">
+            Tacos de Sinuca <span class="amber-gradient-text">Customizados</span>
+</h2>
+<p class="mt-2 text-slate-400 max-w-xl text-sm sm:text-base">
+            Projetados no padrão torneio internacional com 145cm, madeiras nobres tratadas a vácuo, acabamento em carbono aeronáutico e estampas exclusivas anime &amp; guerreiro.
+          </p>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs font-mono text-slate-400">STATUS: <strong class="text-emerald-400">DISPONÍVEL SOB ENCOMENDA</strong></span>
+</div>
+</div>
+<!-- Feature Big Card (Dragon Ball / Goku Cue Showcase) -->
+<div class="rounded-2xl bg-obsidian-850 border border-amberGold-500/25 overflow-hidden shadow-2xl relative">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+<!-- Cue Full Art Visual Presentation (IMAGE_3) -->
+<div class="lg:col-span-8 relative bg-black/40 overflow-hidden flex items-center justify-center p-3 sm:p-6 group">
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-transparent z-10 pointer-events-none"></div>
+<img alt="Custom Pool Cue Goku Limited Edition Dragon Ball Edição de Colecionador" class="w-full h-auto object-contain max-h-[620px] transition-transform duration-700 group-hover:scale-[1.02]" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo-WuhWz6NVrsQTi8xcgaYvS-LYAyVSy5LvECxBmopuI-kvfA8hDhECsUtBQZbtdknoWoIPyU09UKV7o5w87Q7hikkxuRwa-vub4mzlVzNYPlkD1tpjWtBTuLC3MHJPKFLvB-1_N73xDBveZFrR4QQdhkbQZ8QSCFEDUNlhgOlhlQCzwXJXZXJFrSa-tAQrNQlrYacpiIegwvwAobuRO5f77JOuweeQmK038uJoYM2o3nyQo85IgIP1csV6kiM6JYTuK4"/>
+<div class="absolute top-6 left-6 z-20 flex flex-col gap-2">
+<span class="px-3 py-1 rounded bg-black/80 backdrop-blur border border-amberGold-500/50 text-[11px] font-mono text-amberGold-400 font-bold tracking-widest uppercase">
+                EDITION: GOKU SAIYAN PRO
+              </span>
+<span class="px-2.5 py-0.5 rounded bg-black/60 text-[10px] font-mono text-slate-300">
+                COMPRIMENTO: 145 CM
+              </span>
+</div>
+</div>
+<!-- Cue Specs, Material breakdown & Purchase details -->
+<div class="lg:col-span-4 p-6 sm:p-8 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-white/10 bg-obsidian-850">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-mono uppercase text-slate-400">Série Limitada #08/50</span>
+<div class="flex text-amberGold-400 text-xs">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-white mb-2 font-mono">GOKU DRAGON BALL CUE 145CM</h3>
+<p class="text-xs text-slate-400 leading-relaxed mb-6">
+                Construção balanceada em Maple Canadense selecionado e núcleo amortecido em fibra de carbono. Desenho texturizado em alta resolução com selo de proteção cerâmica UV anti-riscos.
+              </p>
+<!-- Technical Specification Badges -->
+<div class="space-y-3 font-mono text-xs">
+<div class="p-3 rounded-lg bg-obsidian-900 border border-white/5 flex items-center justify-between">
+<span class="text-slate-400 flex items-center gap-2">
+<i class="fa-solid fa-bullseye text-amberGold-400"></i> Ponteira
+                  </span>
+<span class="text-white font-semibold">11mm Vac-Leather Pro</span>
+</div>
+<div class="p-3 rounded-lg bg-obsidian-900 border border-white/5 flex items-center justify-between">
+<span class="text-slate-400 flex items-center gap-2">
+<i class="fa-solid fa-hand text-amberGold-400"></i> Empunhadura
+                  </span>
+<span class="text-white font-semibold">Couro Soft Grip Vulcanizado</span>
+</div>
+<div class="p-3 rounded-lg bg-obsidian-900 border border-white/5 flex items-center justify-between">
+<span class="text-slate-400 flex items-center gap-2">
+<i class="fa-solid fa-weight-hanging text-amberGold-400"></i> Peso Calibrado
+                  </span>
+<span class="text-white font-semibold">19.2 oz Ajustável</span>
+</div>
+<div class="p-3 rounded-lg bg-obsidian-900 border border-white/5 flex items-center justify-between">
+<span class="text-slate-400 flex items-center gap-2">
+<i class="fa-solid fa-certificate text-amberGold-400"></i> Certificado 3D
+                  </span>
+<span class="text-emerald-400 font-semibold">NFT Autenticado</span>
+</div>
+</div>
+</div>
+<!-- Price and Buy Action -->
+<div class="mt-8 pt-6 border-t border-white/10">
+<div class="flex items-baseline justify-between mb-4">
+<div>
+<span class="text-[11px] font-mono text-slate-400 uppercase block">Preço sob demanda</span>
+<span class="text-2xl font-bold font-mono text-amberGold-400">R$ 1.890,00</span>
+</div>
+<span class="text-xs text-slate-400">ou 12x de R$ 178,90</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-3 px-4 rounded-xl bg-amberGold-500 hover:bg-amberGold-400 text-black font-bold text-sm tracking-wide transition-all shadow-glow-gold flex items-center justify-center gap-2" type="button">
+<i class="fa-solid fa-bolt"></i> Encomendar Custom
+                </button>
+<button aria-label="Visualizar em 3D interativo" class="p-3 rounded-xl bg-obsidian-800 hover:bg-obsidian-700 text-white border border-white/10 transition-colors" type="button">
+<i class="fa-solid fa-vr-cardboard"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Custom Cue Banner Strip (IMAGE_4: tacoteste.png) -->
+<div class="border-t border-white/10 bg-obsidian-950 p-4 sm:p-6" data-purpose="secondary-cue-preview">
+<div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-3">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+<h4 class="text-sm font-mono font-bold text-white uppercase tracking-wider">
+                Linha Emerald Cyber • Acabamento PBR Alta Precisão
+              </h4>
+</div>
+<span class="text-xs font-mono text-slate-400">Eixo em Grafite com Detalhes Tribais</span>
+</div>
+<div class="relative w-full overflow-x-auto rounded-lg bg-black/60 p-2 border border-white/5">
+<img alt="Taco de Sinuca Modelo Esmeralda Cyber com Detalhes Geométricos e Madeira Polimerizada" class="w-full h-auto min-w-[700px] object-cover max-h-16 rounded" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw3mJjwxDfdR7tvdfG9o0Pd_sPX8fGNKRnMacyDa9sZbyPqFpdEbRPP89s9pb6LL5oI5CEJvupX1ZylJMlyCr9mEXSG5AJBVWL2xBg1Sjq108aQY765603mEin4toN889NggpCXHg0o9W78YykypWPj-HDssRSvzqp16vtfpOYRPcfMT-_3Kq37eu8Ue0yDXWHL9Bd40WszW45cco9HzIJtVEpJkqz_tw8tKoWcUYzyS2zll3z3Y2Gn8affCzj-d3ONmc"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CueSticksShowcase -->
+<!-- BEGIN: CS2SkinsMarket (Pillar 2) -->
+<section class="py-20 lg:py-28 relative bg-obsidian-950 border-b border-white/5" data-purpose="cs2-skins-pillar" id="skins">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Title & Meta Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<div class="inline-flex items-center gap-2 text-cyan-400 font-mono text-xs font-semibold tracking-wider uppercase mb-2">
+<span class="w-2 h-2 rounded-full bg-cyan-400"></span> PILAR 02 • COUNTER-STRIKE 2 VAULT
+          </div>
+<h2 class="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">
+            Skins Lendárias <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400">CS2 Marketplace</span>
+</h2>
+<p class="mt-2 text-slate-400 max-w-xl text-sm sm:text-base">
+            Negociação instantânea peer-to-peer com taxas zero de custódia, inspeção com shaders Source 2 em 3D e itens autênticos Factory New de raridade máxima.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 text-xs font-mono font-bold rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/20 transition-colors" type="button">
+            Filtrar: Raras / Covert
+          </button>
+<button class="px-4 py-2 text-xs font-mono font-semibold rounded-lg bg-obsidian-850 border border-white/10 text-slate-300 hover:text-white transition-colors" type="button">
+            Mais Populares
+          </button>
+</div>
+</div>
+<!-- CS2 Skin Showcase Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Skin Card 1: Butterfly Knife Doppler Pink Galaxy (IMAGE_16) -->
+<article class="rounded-2xl bg-obsidian-850 border border-fuchsia-500/25 overflow-hidden shadow-2xl hover:border-fuchsia-400/50 transition-all flex flex-col justify-between group">
+<div class="relative overflow-hidden bg-black/60">
+<!-- Rarity Ribbon -->
+<div class="absolute top-4 left-4 z-20 flex items-center gap-2">
+<span class="px-3 py-1 rounded bg-fuchsia-600/90 text-white font-mono text-xs font-bold tracking-wider uppercase backdrop-blur shadow-glow-purple">
+                ★ COVERTEIRA | FACA
+              </span>
+<span class="px-2 py-1 rounded bg-black/70 text-slate-300 font-mono text-[11px] border border-white/10">
+                FN • 0.0091
+              </span>
+</div>
+<!-- Quick Inspect Overlay -->
+<div class="absolute top-4 right-4 z-20">
+<button aria-label="Inspecionar Modelo 3D" class="w-9 h-9 rounded-full bg-black/70 border border-white/20 text-slate-200 hover:text-cyan-400 hover:border-cyan-400 flex items-center justify-center transition-colors" type="button">
+<i class="fa-solid fa-cube text-sm"></i>
+</button>
+</div>
+<!-- Skin Image -->
+<img alt="Butterfly Knife Doppler Phase 2 Pink Galaxy Factory New CS2 Skin" class="w-full h-72 sm:h-80 object-cover object-center group-hover:scale-105 transition-transform duration-700" loading="lazy" src="https://lh3.googleusercontent.com/aida/AEtjO1UP-nFMe-f5bZh7E-mWxxAzFInupY2UCsFNF_-UFYj2bywuW4RiWj-LHbVFC4W2U3X2tOKKtjlR0qh4d8iYOMj7ZmO6v405LBDgFibpNZiM15eGMqnTaUn_PZ-_waopFHjHfPzd8swSSy26LHkh9uRyS7FCllTgbIpwHlS7fln89nMU6uwkoijAKG8ObLAi7PTKnNI-mzw4PNydg_w0_TZ7rbxqgFNJN6QiEuPJMn7i3Y2sF2waQDScMOx9"/>
+</div>
+<!-- Skin Info & Details -->
+<div class="p-6">
+<div class="flex items-start justify-between gap-4">
+<div>
+<p class="text-xs font-mono text-fuchsia-400 font-semibold uppercase tracking-wider">Doppler Phase 2 • Nebula Nebula</p>
+<h3 class="text-xl sm:text-2xl font-black text-white font-mono mt-1">BUTTERFLY KNIFE | PINK GALAXY</h3>
+</div>
+<div class="text-right">
+<span class="text-xs font-mono text-slate-400 block">Preço de Mercado</span>
+<span class="text-2xl font-black font-mono text-white">R$ 18.450</span>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
+<span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-cat text-cyan-400"></i> Trade Lock: 0 Dias</span>
+<span class="text-slate-300">Padrão de Fase #421</span>
+</div>
+<div class="mt-5 grid grid-cols-2 gap-3">
+<button class="py-2.5 px-4 rounded-xl bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-glow-purple flex items-center justify-center gap-2" type="button">
+<i class="fa-brands fa-steam"></i> Trocar com Bot
+              </button>
+<button class="py-2.5 px-4 rounded-xl bg-obsidian-800 hover:bg-obsidian-750 border border-white/10 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2" type="button">
+<i class="fa-solid fa-eye text-cyan-400"></i> Inspecionar 3D
+              </button>
+</div>
+</div>
+</article>
+<!-- Skin Card 2: AWP Dragon Lore (IMAGE_15) -->
+<article class="rounded-2xl bg-obsidian-850 border border-amberGold-500/25 overflow-hidden shadow-2xl hover:border-amberGold-400/50 transition-all flex flex-col justify-between group">
+<div class="relative overflow-hidden bg-black/60">
+<!-- Rarity Ribbon -->
+<div class="absolute top-4 left-4 z-20 flex items-center gap-2">
+<span class="px-3 py-1 rounded bg-amberGold-600/90 text-black font-mono text-xs font-black tracking-wider uppercase backdrop-blur shadow-glow-gold">
+                ★ SOUVENIR / COVERT
+              </span>
+<span class="px-2 py-1 rounded bg-black/70 text-slate-300 font-mono text-[11px] border border-white/10">
+                FLOAT: 0.0157
+              </span>
+</div>
+<!-- Quick Inspect Overlay -->
+<div class="absolute top-4 right-4 z-20">
+<button aria-label="Inspecionar Modelo 3D" class="w-9 h-9 rounded-full bg-black/70 border border-white/20 text-slate-200 hover:text-amberGold-400 hover:border-amberGold-400 flex items-center justify-center transition-colors" type="button">
+<i class="fa-solid fa-cube text-sm"></i>
+</button>
+</div>
+<!-- Skin Image -->
+<img alt="AWP Dragon Lore Factory New Float 0.0157 CS2 Sniper Rifle Artwork" class="w-full h-72 sm:h-80 object-cover object-center group-hover:scale-105 transition-transform duration-700" loading="lazy" src="https://lh3.googleusercontent.com/aida/AEtjO1XGWYPGC9lwbGzwHhGpW8sE-AIOB6lOeDr41oWCxBhb3aE-rRtY4CIYj0bI6tFk816se8Y3p5LVgUBwONOIOwR0aJFknfK6y1w9ykn4RY1Orc9N8v0UWVry-EfWU1Wxdh9JM8I2UYgg75AWi8oTs9o-cCISZBeH1_Q5raj4UkAqwsczbjlGBdG_DgfW-AR9Kc2NjclStB-9pbyg16SiqNkROp3-7rUnDNfU9FXrWWerIVPlpKkErEkjBkI"/>
+</div>
+<!-- Skin Info & Details -->
+<div class="p-6">
+<div class="flex items-start justify-between gap-4">
+<div>
+<p class="text-xs font-mono text-amberGold-400 font-semibold uppercase tracking-wider">The Cobblestone Collection</p>
+<h3 class="text-xl sm:text-2xl font-black text-white font-mono mt-1">AWP | DRAGON LORE</h3>
+</div>
+<div class="text-right">
+<span class="text-xs font-mono text-slate-400 block">Preço de Mercado</span>
+<span class="text-2xl font-black font-mono text-amberGold-400">R$ 54.200</span>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
+<span class="flex items-center gap-1.5"><i class="fa-solid fa-check-double text-emerald-400"></i> Autenticidade Verificada</span>
+<span class="text-slate-300">Stickers Dourados Krakow</span>
+</div>
+<div class="mt-5 grid grid-cols-2 gap-3">
+<button class="py-2.5 px-4 rounded-xl bg-amberGold-500 hover:bg-amberGold-400 text-black font-bold text-xs uppercase tracking-wider transition-colors shadow-glow-gold flex items-center justify-center gap-2" type="button">
+<i class="fa-solid fa-lock-open"></i> Proposta Direta
+              </button>
+<button class="py-2.5 px-4 rounded-xl bg-obsidian-800 hover:bg-obsidian-750 border border-white/10 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2" type="button">
+<i class="fa-solid fa-vr-cardboard text-amberGold-400"></i> Visualizador 3D
+              </button>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: CS2SkinsMarket -->
+<!-- BEGIN: AudioKitsSection (Pillar 3) -->
+<section class="py-20 lg:py-28 relative bg-obsidian-900/40 border-b border-white/5" data-purpose="profile-audio-pillar" id="musicas">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Title & Meta Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<div class="inline-flex items-center gap-2 text-fuchsia-400 font-mono text-xs font-semibold tracking-wider uppercase mb-2">
+<span class="w-2 h-2 rounded-full bg-fuchsia-500"></span> PILAR 03 • AUDIÓFILO GAMER &amp; PROFILE ANTHEMS
+          </div>
+<h2 class="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">
+            Músicas de Perfil <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 via-pink-400 to-amberGold-400">&amp; Music Kits</span>
+</h2>
+<p class="mt-2 text-slate-400 max-w-xl text-sm sm:text-base">
+            Identidade sonora única para o seu perfil no Steam, canais Discord e introduções de stream. Hinos de MVP customizados com masterização binaural e visualizadores dinâmicos.
+          </p>
+</div>
+<span class="px-3.5 py-1.5 rounded-full bg-obsidian-850 border border-white/10 text-slate-300 font-mono text-xs">
+<i class="fa-solid fa-headphones text-fuchsia-400 mr-1.5"></i> Áudio lossless 24-bit / 96kHz
+        </span>
+</div>
+<!-- Interactive Audio Center Component -->
+<div class="rounded-3xl bg-gradient-to-br from-obsidian-900 via-obsidian-850 to-obsidian-900 border border-fuchsia-500/20 p-6 sm:p-10 shadow-2xl relative overflow-hidden" data-purpose="music-player-showcase">
+<!-- Glowing Backdrop -->
+<div class="absolute -right-24 -bottom-24 w-96 h-96 bg-fuchsia-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Holographic Waveform & Playing Info -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-4">
+<span class="px-2.5 py-1 rounded bg-fuchsia-500/20 border border-fuchsia-500/40 text-fuchsia-300 font-mono text-[11px] font-bold tracking-widest uppercase">
+                EM REPRODUÇÃO NO PROFILE
+              </span>
+<span class="text-xs font-mono text-slate-400">BPM: 138 • KEY: F# MINOR</span>
+</div>
+<h3 class="text-2xl sm:text-3xl font-extrabold text-white font-mono leading-tight">
+              NEBULA PHANTOM • EPIC MVP ANTHEM (CYBERPUNK MIX)
+            </h3>
+<p class="text-sm text-slate-400 mt-2">
+              Compositor Exclusivo Pollexperts Studios. Inclui stingers de início de round, contagem regressiva de bomba e hino triunfal de clutch 1v5.
+            </p>
+<!-- Holographic Animated Sound Frequency Waves -->
+<div class="mt-8 p-6 rounded-2xl bg-black/60 border border-white/10 flex flex-col gap-4">
+<div class="flex items-end justify-between h-14 px-2 gap-1.5 sm:gap-2">
+<div class="w-1.5 sm:w-2 bg-fuchsia-500 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-fuchsia-400 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-pink-400 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-amberGold-400 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-cyan-400 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-fuchsia-400 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-pink-500 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-amberGold-500 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-cyan-300 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-fuchsia-500 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-pink-400 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-amberGold-400 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-fuchsia-400 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-cyan-400 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-fuchsia-600 rounded-full wave-bar"></div>
+<div class="w-1.5 sm:w-2 bg-pink-500 rounded-full wave-bar"></div>
+</div>
+<!-- Seek Bar Simulation -->
+<div class="space-y-1.5">
+<div class="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-fuchsia-500 to-amberGold-400 h-full w-2/5 rounded-full"></div>
+</div>
+<div class="flex justify-between text-[11px] font-mono text-slate-400">
+<span>01:14</span>
+<span>03:42</span>
+</div>
+</div>
+<!-- Controls -->
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-4">
+<button aria-label="Anterior" class="text-slate-400 hover:text-white transition-colors" type="button">
+<i class="fa-solid fa-backward-step text-sm"></i>
+</button>
+<button aria-label="Tocar ou Pausar" class="w-11 h-11 rounded-full bg-fuchsia-500 hover:bg-fuchsia-400 text-white flex items-center justify-center transition-all shadow-glow-purple" type="button">
+<i class="fa-solid fa-pause text-sm"></i>
+</button>
+<button aria-label="Próxima" class="text-slate-400 hover:text-white transition-colors" type="button">
+<i class="fa-solid fa-forward-step text-sm"></i>
+</button>
+</div>
+<div class="flex items-center gap-3 text-slate-300 font-mono text-xs">
+<i class="fa-solid fa-volume-high text-fuchsia-400"></i>
+<span class="hidden sm:inline">100% STEREO MASTER</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Audio Playlist / Custom Order List -->
+<div class="lg:col-span-5 flex flex-col gap-3 font-mono">
+<h4 class="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">
+              Catálogo de Hinos Populares
+            </h4>
+<!-- Audio Item 1 -->
+<div class="p-3.5 rounded-xl bg-obsidian-900 border border-fuchsia-500/30 flex items-center justify-between hover:border-fuchsia-400 transition-colors cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-fuchsia-500/20 text-fuchsia-400 flex items-center justify-center text-xs">
+<i class="fa-solid fa-play"></i>
+</div>
+<div>
+<p class="text-xs font-bold text-white">Dragon Rage • Shenron Roar</p>
+<p class="text-[10px] text-slate-400">Orquestral + Trap Sintetizado</p>
+</div>
+</div>
+<span class="text-xs text-amberGold-400 font-bold">R$ 149,00</span>
+</div>
+<!-- Audio Item 2 -->
+<div class="p-3.5 rounded-xl bg-obsidian-900 border border-white/5 flex items-center justify-between hover:border-white/20 transition-colors cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-white/5 text-slate-300 flex items-center justify-center text-xs">
+<i class="fa-solid fa-play"></i>
+</div>
+<div>
+<p class="text-xs font-bold text-white">Dust II Sunset • Chill Hop MVP</p>
+<p class="text-[10px] text-slate-400">Lo-Fi Ambient Relaxing</p>
+</div>
+</div>
+<span class="text-xs text-amberGold-400 font-bold">R$ 120,00</span>
+</div>
+<!-- Audio Item 3 -->
+<div class="p-3.5 rounded-xl bg-obsidian-900 border border-white/5 flex items-center justify-between hover:border-white/20 transition-colors cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-white/5 text-slate-300 flex items-center justify-center text-xs">
+<i class="fa-solid fa-play"></i>
+</div>
+<div>
+<p class="text-xs font-bold text-white">Saiyan Transcendence</p>
+<p class="text-[10px] text-slate-400">Heavy Industrial Rock Theme</p>
+</div>
+</div>
+<span class="text-xs text-amberGold-400 font-bold">R$ 165,00</span>
+</div>
+<!-- Custom Anthem Composer Banner -->
+<div class="mt-2 p-4 rounded-xl bg-gradient-to-r from-fuchsia-950/40 to-amber-950/40 border border-amberGold-500/20 text-center">
+<p class="text-xs font-bold text-white mb-1">Quer um Hino 100% Exclusivo?</p>
+<p class="text-[11px] text-slate-300 font-sans mb-3">Produzimos a sua trilha sonora oficial para canais, streams e perfill gamer.</p>
+<a class="inline-block py-2 px-4 rounded-lg bg-amberGold-500 hover:bg-amberGold-400 text-black text-xs font-bold tracking-wide transition-colors" href="#customizador">
+                Contratar Produção de Áudio
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AudioKitsSection -->
+<!-- BEGIN: InteractiveConfiguratorTeaser -->
+<section class="py-20 bg-obsidian-950 relative border-b border-white/5" data-purpose="customizer-callout" id="customizador">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="relative rounded-3xl bg-obsidian-850 border border-amberGold-500/30 p-8 sm:p-14 overflow-hidden">
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-amberGold-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="max-w-2xl relative z-10">
+<span class="px-3 py-1 rounded bg-amberGold-500/10 border border-amberGold-500/30 text-amberGold-400 font-mono text-xs font-bold tracking-widest uppercase mb-4 inline-block">
+            ESTÚDIO CRIATIVO POLLEXPERTS
+          </span>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-white uppercase tracking-tight">
+            Crie seu <span class="amber-gradient-text">Combo Supremo</span> em 3D
+          </h2>
+<p class="text-slate-300 mt-4 text-base leading-relaxed">
+            Monte um kit customizado com seu Taco de Sinuca com gravação a laser do seu nickname, adicione sua skin de faca CS2 favorita e defina a faixa musical que tocará ao acessar sua sala virtual.
+          </p>
+<div class="mt-8 flex flex-wrap gap-4 items-center">
+<button class="py-3.5 px-8 rounded-xl bg-amberGold-500 hover:bg-amberGold-400 text-black font-extrabold text-sm tracking-wider uppercase transition-all shadow-glow-gold flex items-center gap-2" type="button">
+<i class="fa-solid fa-wand-magic-sparkles"></i> Abrir Estúdio 3D
+            </button>
+<button class="py-3.5 px-6 rounded-xl bg-obsidian-800 hover:bg-obsidian-750 text-white font-bold text-sm border border-white/10 transition-colors flex items-center gap-2" type="button">
+<i class="fa-solid fa-comments"></i> Falar com um Artesão
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: InteractiveConfiguratorTeaser -->
+<!-- BEGIN: TrustAndPerksBanner -->
+<section class="py-14 bg-obsidian-900 border-b border-white/5" data-purpose="trust-badges">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Perk 1 -->
+<div class="flex items-center gap-4 p-4 rounded-xl bg-obsidian-950/60 border border-white/5">
+<div class="w-12 h-12 rounded-xl bg-amberGold-500/10 text-amberGold-400 flex items-center justify-center text-xl shrink-0">
+<i class="fa-solid fa-award"></i>
+</div>
+<div>
+<h4 class="text-sm font-bold text-white">Madeiras Nobres &amp; PBR</h4>
+<p class="text-xs text-slate-400">Precisão milimétrica e acabamento cerâmico.</p>
+</div>
+</div>
+<!-- Perk 2 -->
+<div class="flex items-center gap-4 p-4 rounded-xl bg-obsidian-950/60 border border-white/5">
+<div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+<i class="fa-brands fa-steam"></i>
+</div>
+<div>
+<h4 class="text-sm font-bold text-white">Trocas CS2 Seguras</h4>
+<p class="text-xs text-slate-400">Autenticação Steam Guard com bot automatizado.</p>
+</div>
+</div>
+<!-- Perk 3 -->
+<div class="flex items-center gap-4 p-4 rounded-xl bg-obsidian-950/60 border border-white/5">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl shrink-0">
+<i class="fa-solid fa-qrcode"></i>
+</div>
+<div>
+<h4 class="text-sm font-bold text-white">PIX &amp; Cripto Ativos</h4>
+<p class="text-xs text-slate-400">Aprovação imediata e desconto de 5% no PIX.</p>
+</div>
+</div>
+<!-- Perk 4 -->
+<div class="flex items-center gap-4 p-4 rounded-xl bg-obsidian-950/60 border border-white/5">
+<div class="w-12 h-12 rounded-xl bg-fuchsia-500/10 text-fuchsia-400 flex items-center justify-center text-xl shrink-0">
+<i class="fa-solid fa-headset"></i>
+</div>
+<div>
+<h4 class="text-sm font-bold text-white">Suporte VIP 24/7</h4>
+<p class="text-xs text-slate-400">Atendimento personalizado pelo Discord e WhatsApp.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TrustAndPerksBanner -->
+<!-- BEGIN: SiteFooter -->
+<footer class="bg-obsidian-950 pt-16 pb-12 text-slate-400 text-sm border-t border-white/10" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+<!-- Brand Info -->
+<div class="lg:col-span-2">
+<a class="flex items-center gap-3 mb-4" href="#">
+<div class="w-9 h-9 rounded-xl bg-amberGold-500 text-black font-mono font-black flex items-center justify-center shadow-glow-gold">
+              3D
+            </div>
+<span class="text-xl font-extrabold tracking-wider text-white font-mono">
+              POLLEXPERTS<span class="text-amberGold-400">3D</span>
+</span>
+</a>
+<p class="text-slate-400 max-w-sm text-xs leading-relaxed mb-6">
+            A grife definitiva em tacos de sinuca artesanais de alto padrão, skins de elite do ecossistema CS2 e hinos musicais de perfil.
+          </p>
+<div class="flex items-center gap-3">
+<a aria-label="Discord Oficial" class="w-9 h-9 rounded-lg bg-obsidian-900 border border-white/10 hover:border-amberGold-400 text-slate-300 hover:text-white flex items-center justify-center transition-colors" href="#">
+<i class="fa-brands fa-discord"></i>
+</a>
+<a aria-label="Instagram" class="w-9 h-9 rounded-lg bg-obsidian-900 border border-white/10 hover:border-amberGold-400 text-slate-300 hover:text-white flex items-center justify-center transition-colors" href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a aria-label="Steam Group" class="w-9 h-9 rounded-lg bg-obsidian-900 border border-white/10 hover:border-amberGold-400 text-slate-300 hover:text-white flex items-center justify-center transition-colors" href="#">
+<i class="fa-brands fa-steam"></i>
+</a>
+<a aria-label="YouTube Showcase" class="w-9 h-9 rounded-lg bg-obsidian-900 border border-white/10 hover:border-amberGold-400 text-slate-300 hover:text-white flex items-center justify-center transition-colors" href="#">
+<i class="fa-brands fa-youtube"></i>
+</a>
+</div>
+</div>
+<!-- Links: Tacos -->
+<div>
+<h5 class="text-xs font-mono font-bold text-white uppercase tracking-wider mb-4">Tacos de Sinuca</h5>
+<ul class="space-y-2.5 text-xs font-medium">
+<li><a class="hover:text-amberGold-400 transition-colors" href="#tacos">Coleção Goku DBZ</a></li>
+<li><a class="hover:text-amberGold-400 transition-colors" href="#tacos">Modelos Fibra de Carbono</a></li>
+<li><a class="hover:text-amberGold-400 transition-colors" href="#tacos">Ponteiras de Alta Precisão</a></li>
+<li><a class="hover:text-amberGold-400 transition-colors" href="#customizador">Encomenda Sob Medida</a></li>
+<li><a class="hover:text-amberGold-400 transition-colors" href="#">Manual de Cuidados</a></li>
+</ul>
+</div>
+<!-- Links: CS2 Skins -->
+<div>
+<h5 class="text-xs font-mono font-bold text-white uppercase tracking-wider mb-4">Mercado CS2</h5>
+<ul class="space-y-2.5 text-xs font-medium">
+<li><a class="hover:text-cyan-400 transition-colors" href="#skins">Butterfly Doppler P2</a></li>
+<li><a class="hover:text-cyan-400 transition-colors" href="#skins">AWP Dragon Lore</a></li>
+<li><a class="hover:text-cyan-400 transition-colors" href="#skins">Karambit Gamma Doppler</a></li>
+<li><a class="hover:text-cyan-400 transition-colors" href="#">Inspeção em Tempo Real</a></li>
+<li><a class="hover:text-cyan-400 transition-colors" href="#">Taxas e Regras de Troca</a></li>
+</ul>
+</div>
+<!-- Links: Audio & Áreas -->
+<div>
+<h5 class="text-xs font-mono font-bold text-white uppercase tracking-wider mb-4">Hinos &amp; Som</h5>
+<ul class="space-y-2.5 text-xs font-medium">
+<li><a class="hover:text-fuchsia-400 transition-colors" href="#musicas">Áudio Kits de Perfil</a></li>
+<li><a class="hover:text-fuchsia-400 transition-colors" href="#musicas">Hinos de MVP Custom</a></li>
+<li><a class="hover:text-fuchsia-400 transition-colors" href="#">Stingers para Streamers</a></li>
+<li><a class="hover:text-fuchsia-400 transition-colors" href="#">Termos de Uso e Royalties</a></li>
+<li><a class="hover:text-fuchsia-400 transition-colors" href="#">Segurança &amp; PIX</a></li>
+</ul>
+</div>
+</div>
+<!-- Copyright & Disclaimer -->
+<div class="mt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-4">
+<p>© 2026 POLLEXPERTS 3D — Todos os direitos reservados. Não associado diretamente com a Valve Corp.</p>
+<div class="flex items-center gap-6 font-mono">
+<a class="hover:text-white transition-colors" href="#">Termos de Serviço</a>
+<a class="hover:text-white transition-colors" href="#">Privacidade</a>
+<span class="text-amberGold-400 flex items-center gap-1"><i class="fa-solid fa-shield-check"></i> SSL 256-BIT ATIVO</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: SiteFooter -->
+<!-- Interactive Controls Preview Script -->
+<script data-purpose="interface-interactivity">
+    document.addEventListener('DOMContentLoaded', () => {
+      // Toggle play/pause icon simulation for audio player showcase
+      const playBtn = document.querySelector('[data-purpose="music-player-showcase"] button[aria-label="Tocar ou Pausar"]');
+      if (playBtn) {
+        let isPlaying = true;
+        playBtn.addEventListener('click', () => {
+          isPlaying = !isPlaying;
+          playBtn.innerHTML = isPlaying 
+            ? '<i class="fa-solid fa-pause text-sm"></i>' 
+            : '<i class="fa-solid fa-play text-sm ml-0.5"></i>';
+        });
+      }
+    });
+  </script>
+</body></html>

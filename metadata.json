@@ -1,0 +1,6 @@
+{
+  "name": "POLLEXPERTS 3D | Luxury Cues, CS2 Skins & Audio Kits",
+  "description": "A grife definitiva em tacos de sinuca artesanais de alto padrão, skins de elite do ecossistema CS2 e hinos musicais de perfil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
